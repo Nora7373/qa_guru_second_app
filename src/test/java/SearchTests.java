@@ -14,7 +14,7 @@ public class SearchTests {
     }
     @Test
     void successfulSearchTest() {
-        // add commit 2
+        // add commit 21
         open("https://www.google.com/");
         $("[name=q]").setValue("selenide").pressEnter();
         $("[id=search]").shouldHave(text("https://ru.selenide.org"));
